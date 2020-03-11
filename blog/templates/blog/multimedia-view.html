@@ -1,0 +1,11 @@
+{% extends "blog/base.html" %}
+{% block content %}
+	<div class="content-section">
+
+		<div class = "Container">
+			<h3>Upload</h3><br>
+			<button class="btn btn-outline-info" onclick="window.location.href={% url 'imagemedia-view' %}">Images</button>
+			<button class="btn btn-outline-info" onclick="window.location.href={% url 'audiomedia-view' %}"> Audio</button>
+		</div>
+	</div>
+{% endblock content %}
